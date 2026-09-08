@@ -1,0 +1,12 @@
+{
+  "name": "nekcart",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "bun run --filter './server' dev & bun run --filter './client' dev",
+    "dev:server": "cd server && bun run dev",
+    "dev:client": "cd client && bun run dev",
+    "seed": "cd server && bun run seed",
+    "install:all": "cd server && bun install && cd ../client && bun install"
+  }
+}
